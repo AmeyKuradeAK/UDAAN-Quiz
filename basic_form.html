@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #007bff;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .option input[type="radio"]:checked {
+            background-color: #007bff;
+        }
+
+        .option label {
+            margin: 0;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Technology Quiz</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="rollno">Roll No.:</label>
+                <input type="number" id="rollno" name="rollno" required>
+            </div>
+            <hr>
+            <!--Question 1-->
+            <div class="question">
+                <label>1. What is HTML?</label>
+                <div class="option">
+                    <input type="radio" id="html1" name="html" value="a">
+                    <label for="html1">a) Hyper Text Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html2" name="html" value="b">
+                    <label for="html2">b) Hyperlinks and Text Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html3" name="html" value="c">
+                    <label for="html3">c) Home Tool Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html4" name="html" value="d">
+                    <label for="html4">d) Hyperlinks Text Markup Language</label>
+                </div>
+            </div>
+            <!-- Add more questions similarly -->
+            <!--Question 2-->
+            <div class="question">
+                <label>1. What is HTML?</label>
+                <div class="option">
+                    <input type="radio" id="html1" name="html" value="a">
+                    <label for="html1">a) Hyper Text Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html2" name="html" value="b">
+                    <label for="html2">b) Hyperlinks and Text Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html3" name="html" value="c">
+                    <label for="html3">c) Home Tool Markup Language</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="html4" name="html" value="d">
+                    <label for="html4">d) Hyperlinks Text Markup Language</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
